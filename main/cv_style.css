@@ -91,7 +91,7 @@ hr{
     padding-top: 2rem;
 }
 .tool{
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
 }
 .btn {
     display: flex;
@@ -111,4 +111,8 @@ hr{
 .btn:hover{
     color: #fff;
     background-color: #0084ff;
+}
+.btn a{
+    text-decoration: none; 
+    color: #fff;
 }
