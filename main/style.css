@@ -44,10 +44,10 @@ h5{
 }
 .heading{
 	text-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 p{
-	font-sixe: 17px;
+	font-size: 17px;
 	line-height: 140%;
 	color: var(--color-dark-variant);
 }
@@ -62,10 +62,11 @@ a{
 	transition: var(--transition);
 }
 a:hover{
-	color: var(--color-dark-variant);
+	color: #ffffff;
 	text-decoration-color: var(--color-dark-variant) !important;
 	text-decoration: underline;
 	text-underline-offset: 1rem;
+	color: #555555;
 }
 .btn{
 	display: inline-block;
@@ -112,7 +113,7 @@ a:hover{
 /*Start of Nav bar*/
 
 nav{
-	height: 5rem;
+	height: 3.5rem;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -120,6 +121,7 @@ nav{
 	width: 100%;
 	display: grid;
 	place-items: center;
+	background-color: rgba(248, 248, 248, 75%);
 }
 .nav-container{
 	display: flex;
@@ -132,6 +134,9 @@ nav{
 	color: var(--color-black);
 	text-decoration: none !important;
 }
+.nav-container .logo:hover{
+	font-size: 180%;
+}
 .nav-links{
 	display: flex;
 	align-items: center;
@@ -140,16 +145,27 @@ nav{
 
 /*End of Nav bar*/
 
-
+body{ 
+	background-color: #fafafa;
+}
 
 /*Start of header*/
-
+header {
+	width: 100%;
+    height: 38rem;
+	background-color: #EEEEEE;
+	background-image: url('E:/Afif/HTML/ICS Project/my_portfolio_website/main/img/jpg/Header.jpg');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .header_container{
-	padding-top: 14rem;
+	padding-top: 9rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	max-width: 800px;
 	justify-content: space-between;
+	margin-left: 5rem;
 }
 .header-left{
 	width: 15rem;
@@ -170,7 +186,7 @@ nav{
 .header-right h2{
 	margin-top: .4rem;
 }
-.header-right .header-action-area{
+.header-action-area{
 	display: flex;
 	margin-left: 1rem;
 	margin-top: 1rem;
@@ -188,6 +204,9 @@ nav{
 /*End of header*/
 
 /*Start of About Section*/
+.About{
+	height: 35rem;
+}
 .about-container{
 	display: grid;
 	grid-template-columns: 38% auto;
@@ -198,7 +217,8 @@ nav{
     border-radius: 50px;
     overflow: hidden;
 	display: flex;
-	align-items: center;
+	object-position: center;
+	object-fit: cover;
 	height: 25rem;
 }
 .basic-edu{
@@ -216,9 +236,223 @@ nav{
 .edu-box img{
 	margin: auto;
 }
-.about_para{
+.about-para{
 	font-size: 18px;
 	margin: 1.5rem;
-	margin-top: 1rem;
 }
 /*End of About Section*/
+
+/*Start of Project Section*/
+#Projects{
+	position: relative;
+	margin-bottom: 5rem;
+}
+.project-container .project .project-buttons a:hover{
+	text-decoration: none;
+}
+.project-container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 2rem;
+}
+.project{
+	padding: 1rem;
+	border: 1px solid var(--color-dark-variant);
+	border-radius: 30px;
+	text-align: center;
+}
+.project img{
+	height: 15rem;
+	width: 15rem;
+	border-radius: 30px;
+	margin-bottom: 0.25rem;
+}
+.project-container .project .project-buttons{
+	display: flex;
+	margin: 1rem;
+	gap: 3rem;
+}
+.project-container .project .project-buttons .btn{
+	height: 3.5rem;
+	width: 8rem;
+	font-size: 1.15rem;
+}
+.see-more-btn{
+	margin-top: 2rem;
+	display: flex;
+    justify-content: center; /* Aligns the button horizontally */
+    align-items: center;
+}
+/*End of Project Section*/
+
+/*Start Footer*/
+.main-footer {
+    background: #000;
+    color: #fff;
+}
+.main-footer .main-container{
+    padding-top: 3.5rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+    position: relative;
+}
+
+.main-footer__upper {
+    display: flex;
+    justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.main-footer__row-1 {
+    order: 2
+}
+.main-footer__row-2 {
+    width: 40%;
+    order: 1;
+    max-width: 100%
+}
+.main-footer__short-desc {
+    margin-top: 1rem;
+    color: #eee;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.footer-p{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.main-footer__social-cont {
+    margin-top: 0.75rem;
+	margin-bottom: 1.75rem;
+}
+
+.main-footer__icon {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+.main-footer__icon--mr-none {
+    margin-right: 0
+}
+
+.main-footer__lower {
+    border-top: 1px solid #444;
+    color: #eee;
+    font-size: 0.75rem;
+    text-align: center;
+	padding: 1.5rem 0;
+}
+
+.main-footer__lower a {
+	color: #eee;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 2px;
+}
+.main-footer .branding{
+    margin-bottom: 35px;
+	font-size: 1.25rem;
+}
+.main-footer .branding img{
+	width: 2rem;
+}
+.branding p{
+	color: #ddd;
+	display: flex;
+}
+.bl-stay {
+    position: relative;
+}
+.branding span {
+    font-weight: 400;
+}
+.main-footer .title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.box{
+    margin-bottom: 35px;
+	font-size: 1rem;
+}
+.bl-stay p{
+    margin-bottom: 20px;
+}
+.main-footer .form-footer {
+    position: relative;
+    max-width: 450px;
+}
+.main-footer .form-footer:before, .main-footer .form-footer:after{
+    display: table;
+    content: "";
+}
+.main-footer .form-footer input{
+    background: #333333;
+    border: none;
+    border-radius: 0;
+    height: 35px;
+    width: 65%;
+    float: left;
+    padding: 0 15px;
+    color: #fff;
+}
+input {
+    font-family: 'Montserrat', arial, sans-serif;
+}
+button, input, select, textarea{
+    font-size: 100%;
+    margin: 0;
+}
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+.main-footer .form-footer .btn-subscribe{
+    background: #1b1b1b;
+    color: #d8d8d8;
+    width: 35%;
+	text-align: center;
+}
+.heading span{
+	color: #eee;
+	letter-spacing: 3px;
+}
+.main-footer__lower .heading{
+	margin-bottom: 1.25rem;
+}
+/*End Footer*/
+
+/*Start of project page*/
+.p-page-block{
+	margin: 6rem;
+	margin-bottom: 5rem;
+	margin-left: 2.5rem;
+}
+.ctr .box-title h2 {
+	text-decoration: underline;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+/*End of project page*/
