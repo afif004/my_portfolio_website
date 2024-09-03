@@ -102,15 +102,18 @@ hr{
     width: fit-content;
     padding: 1rem;
     border-radius: 4rem;
-    cursor: pointer;
     color: #fff;
     background-color: #00a4e5;
     border: 1px solid #000;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #00a4e5;
 }
 .btn:hover{
     color: #fff;
     background-color: #0084ff;
+    text-decoration: underline;
+    text-decoration-color: #0084ff;
 }
 .btn a{
     text-decoration: none; 
