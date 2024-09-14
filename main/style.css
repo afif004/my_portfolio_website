@@ -16,7 +16,6 @@
 	--color-white: #ffffff;
 	--color-dark: #353535;
 	--color-dark-variant: #555555;
-	
 	--transition: .3s ease;
 }
 h1,h2,h3,h4,h5{
@@ -341,11 +340,15 @@ header {
 	padding: 1.5rem 0;
 }
 
-.main-footer__lower a {
+.main-footer__lower a{
 	color: #eee;
     font-size: 0.8rem;
     font-weight: bold;
     margin-left: 2px;
+}
+
+.main-footer__lower a:hover{
+	text-decoration: none;
 }
 .main-footer .branding{
     margin-bottom: 35px;
@@ -602,7 +605,7 @@ input {
 	grid-column: span 2;
 }
 
-.prj-banner{
+.scr-prj-banner{
 	background: #fbcc8b;
     background-size: 100%;
     height: 650px;
@@ -612,17 +615,17 @@ input {
 	justify-content: center;
 	text-align: center;
 }
-.prj-banner .pg-title{
+.scr-prj-banner .pg-title{
 	width: 70%;
 	margin: 200px 0 0 0;
 	text-align: center;
 }
-.prj-banner .pg-title p{
+.scr-prj-banner .pg-title p{
 	font-size: 21px;
 	color: #000;
 }
 
-.prj-banner .pg-title .btn {
+.scr-prj-banner .pg-title .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #f7a028; /* Example button background */
@@ -651,7 +654,6 @@ input {
     height: auto; /* Maintain aspect ratio */
 	margin-bottom: 1rem;
 }
-
 .case-txt {
 	padding: 20px;
 	border-radius: 5px;
@@ -671,4 +673,113 @@ input {
 }
 .case-txt .section h2 {
 	padding-bottom: 5px;
+}
+.case-txt li{
+	margin-bottom: 12px;
+}
+.vid-cont{
+	max-width: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 1rem;
+}
+.vid-cont video{
+    max-width: 65%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+	margin: 1rem 0;
+}
+.study-cont .btn {
+    display: inline-block;
+	width: fit-content;
+    padding: 10px 20px;
+    background-color: #f7a028; /* Example button background */
+    color: #fff; /* Example button text color */
+    border-radius: 12px;
+	border-color: #ff9500;
+    text-decoration: none;
+	text-align: center;
+    font-size: 20px;
+    margin-bottom: 18px; /* Add margin to the top if needed */
+}
+.study-cont .btn:hover{
+	background-color: #855CD6;
+	border-color: #855CD6;
+}
+.ems-pg .prj-banner{
+	background: #12133E;
+    background-size: 100%;
+    height: 650px;
+    margin: 0rem 0rem 3rem;
+    display: flex;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+.ems-pg .prj-banner .pg-title{
+	width: 70%;
+	margin: 200px 0 0 0;
+	text-align: cent
+}	
+.ems-pg .prj-banner .pg-title h1{
+	color: #E2E3F6;
+}
+.ems-pg .prj-banner .pg-title p{
+	font-size: 21px;
+	color: #E2E3F6;
+}
+
+.ems-pg .prj-banner .pg-title .btn{
+	display: inline-block;
+    padding: 10px 20px;
+    background-color: #1A2CAA;
+    color: #E2E3F6;
+    border-radius: 12px;
+	border-color: #1A2CAA;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 80px;
+}
+.ems-pg .prj-banner .pg-title a:hover{
+	text-decoration: none;
+}
+.ems-pg .btn{
+	background-color: #1d32c0;
+	border-color: #1d32c0;
+}
+.ems-pg .btn:hover{
+	background-color: #2137d6;
+	border-color: #2137d6;
+}
+.ems-pg h3{
+	margin-bottom: 10px;
+}
+.ems-pg h5{
+	font-weight: bold;
+}
+.ems-img-cont{
+	max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 1rem;
+}
+.ems-img-cont img{
+    max-width: 90%;
+    height: auto; 
+	margin-bottom: 1rem;
+}
+.ems-vid-cont{
+	max-width: 100%;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 1rem;
+}
+.ems-vid-cont video{
+    max-width: 90%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+	margin: 1rem 0;
 }
